@@ -1,0 +1,68 @@
+#chatHistoryPersonal {
+    border:1px solid #000;
+    max-width: 400px;
+    min-width:320px;
+    height: 500px;
+    overflow-y:auto;
+    font-size:12px;
+    font-family:Arial;
+    background:rgba(0,0,0,0.04);
+}
+#chatHistoryPersonal > div:not(.separator) {
+    margin:5px 10px 10px 10px;
+    padding:10px;
+    width:60%;
+    background:#fff;
+    border-radius:8px;
+}
+#chatHistoryPersonal > div.r {
+    float:right;
+    background:#ffebdd;
+}
+#chatHistoryPersonal > div.separator {
+    clear:both;
+    height:0px;
+}
+#chatHistoryPersonal > div:not(.separator) > .profilePicture {
+    width: 24%;
+}
+#chatHistoryPersonal > div:not(.separator) > .name {
+    font-weight:bold;
+    margin-left: 10px;
+    display: inline-block;
+}
+#chatHistoryPersonal > div:not(.separator) > .content {
+    clear: left;
+    margin-top: 10px;
+    color:#555;
+    margin:10px 0;
+    font-size:14px;
+}
+#chatHistoryPersonal > div:not(.separator) > .content > img {
+    max-width: 100px;
+    max-height: 100px;
+    cursor: pointer;
+    margin-bottom:5px;
+}
+#chatHistoryPersonal > div:not(.separator) > .content > audio {
+    width:100%;
+    margin-bottom:5px;
+}
+#chatHistoryPersonal > div:not(.separator) > .content > video {
+    width: 210px;
+    max-height: 100px;
+    margin-bottom:5px;
+}
+#chatHistoryPersonal > div:not(.separator) > .created {
+    color:#777;
+    font-size:9px;
+    text-align:right;
+}
+#chatHistoryPersonal > div:not(.separator) > .content > span {
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+}
+.chathistories {
+    width: 358px !Important;
+}
